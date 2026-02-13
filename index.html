@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/png" href="images/portfolio.png" />
+<title>Nurin Nabeeha binti Azahari | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+
+    <div class="brand">
+      <img src="images/portfolio-icon.png" alt="Portfolio Icon">
+      <strong>Nurin Nabeeha binti Azahari</strong>
+    </div>
+
+    <div>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+
+<div class="hero">
+  <div class="container hero-grid">
+
+    <div>
+      <h1>Hello, I’m Nurin Nabeeha</h1>
+
+      <h2>Final year Software Engineering student building real web and system-based applications</h2>
+
+      <p>
+        I focus on developing web-based systems with real business logic such as attendance
+        validation, staff and administrative management, reporting and filtering features.
+        My projects also involve software testing documentation, system analysis and quality
+        practices based on academic and industry-oriented standards.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn primary">View My Projects</a>
+        <a href="#contact" class="btn outline">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="about-box">
+      <strong>Currently seeking</strong>
+      <p class="hero-note">
+        Internship position as a web developer or software engineer, where I can contribute to
+        real system development and continue improving my backend and system design skills.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="reveal">
+  <div class="container">
+    <div class="section-title">About Me</div>
+
+    <div class="about-box">
+      <p>
+        I am a final year Software Engineering student who enjoys building structured web
+        applications and backend logic for real operational use such as staff attendance,
+        leave management and ticketing systems.
+      </p>
+
+      <p>
+        Outside my academic work, I enjoy spending time in nature when possible, playing
+        badminton, solving logic games such as Sudoku and Solitaire, and watching movies.
+        I am currently seeking an internship position as a web developer or software
+        engineer.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects" class="reveal">
+  <div class="container">
+    <div class="section-title">Featured Projects</div>
+
+    <div class="project-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <span class="badge">Final Year Project</span>
+        <h3>MyWasteCare – Household Waste Management Portal</h3>
+
+        <p>
+          A web-based portal designed to support household waste management operations in Malaysia.
+          The system manages operational records and generates structured reports to support
+          monitoring and decision making.
+        </p>
+
+        <div class="stack">
+          PHP • MySQL • MVC • Reporting & Filtering • Software Testing & Documentation
+        </div>
+
+        <div class="project-links">
+          <a class="btn outline" href="#" target="_blank" rel="noopener">
+            Project Video (Promotion)
+          </a>
+
+          <button class="btn outline"
+                  onclick="openEvidence('images/mywastecare-dashboard.png')">
+            View Evidence
+          </button>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <span class="badge">Web System</span>
+        <h3>Royal Seat Cinemas – Staff & Ticketing Management System</h3>
+
+        <p>
+          An internal cinema management system supporting staff attendance, leave application,
+          ticket sales and administrative monitoring with real-time validation and reporting.
+        </p>
+
+        <div class="stack">
+          PHP • MySQL • JavaScript • Attendance & Leave Validation • Reporting • Software Quality & SCM
+        </div>
+
+        <div class="project-links">
+          <a class="btn outline" href="#" target="_blank" rel="noopener">
+            YouTube Demo
+          </a>
+
+          <button class="btn outline"
+                  onclick="openEvidence('images/rsc-attendance.png')">
+            View Evidence
+          </button>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <span class="badge">ASP.NET Project</span>
+        <h3>Pasta Luxe & Brews Café – E-Commerce Web Application</h3>
+
+        <p>
+          A full-stack ASP.NET web application for online ordering and administration,
+          featuring authentication, shopping cart, tax calculation, sales management
+          and SQL Server integration.
+        </p>
+
+        <div class="stack">
+          ASP.NET • C# • SQL Server • Stored Procedures
+        </div>
+
+        <div class="project-links">
+          <a class="btn outline"
+             href="https://youtu.be/Vj4s8TRl9X0?si=JX4BG_ka_o6D5AmH"
+             target="_blank"
+             rel="noopener">
+             YouTube Demo
+          </a>
+
+          <button class="btn outline"
+                  onclick="openEvidence('images/pastaluxe-cart.png')">
+            View Evidence
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= OTHER PROJECTS ================= -->
+
+<section class="reveal">
+  <div class="container">
+    <div class="section-title">Other Academic & Technical Projects</div>
+
+    <div class="extra-list">
+
+      <div class="extra-item">
+        Vulnerability Assessment using Nessus (ISMS – Host Environment)
+        <button class="mini-btn"
+                onclick="openEvidence('images/nessus-scan.png')">
+          View
+        </button>
+      </div>
+
+      <div class="extra-item">
+        ISMS Audit Report – Brahim’s Food Services (Operations Department)
+        <button class="mini-btn"
+                onclick="openEvidence('images/isms-report.png')">
+          View
+        </button>
+      </div>
+
+      <div class="extra-item">
+        Flutter Tour Booking Application (Mobile & Ubiquitous Computing)
+        <button class="mini-btn"
+                onclick="openEvidence(['images/img1.png','images/img2.png','images/img3.png'])">
+          View
+        </button>
+      </div>
+
+      <div class="extra-item">
+        MRT Putrajaya Line Fare Calculator (Mobile App – Individual)
+        <button class="mini-btn"
+                onclick="openEvidence('images/mrt-app.png')">
+          View
+        </button>
+      </div>
+
+      <div class="extra-item">
+        Categorized Bus Ticketing with QR & NFC Integration
+        <button class="mini-btn"
+                onclick="openEvidence('images/bus-ticketing.png')">
+          View
+        </button>
+      </div>
+
+      <div class="extra-item">
+        University Management System – Java EE (Reuse & Component Based Development)
+        <button class="mini-btn"
+                onclick="openEvidence('images/javaee-system.png')">
+          View
+        </button>
+      </div>
+
+      <div class="extra-item">
+        Campus LAN Design using Cisco Packet Tracer
+        <button class="mini-btn"
+                onclick="openEvidence('images/campus-lan.png')">
+          View
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills" class="reveal">
+  <div class="container">
+    <div class="section-title">Skills & Tools</div>
+
+    <div class="skill-grid">
+      <div class="skill">PHP</div>
+      <div class="skill">Java</div>
+      <div class="skill">C# / ASP.NET</div>
+      <div class="skill">MySQL</div>
+      <div class="skill">SQL Server</div>
+      <div class="skill">HTML & CSS</div>
+      <div class="skill">MVC Architecture</div>
+      <div class="skill">Software Testing & STP</div>
+      <div class="skill">SCM & Version Control</div>
+      <div class="skill">Reporting & Filtering</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="reveal">
+  <div class="container">
+    <div class="section-title">Contact</div>
+
+    <div class="contact-box">
+      <p>
+        <strong>Email:</strong>
+        <a id="emailLink" href="mailto:your_email@example.com">
+          your_email@example.com
+        </a>
+        <button id="copyEmailBtn" class="copy-btn">Copy</button>
+      </p>
+
+      <p><strong>GitHub:</strong> (coming soon)</p>
+
+      <p>
+        I am open to internship opportunities in web and software development.
+      </p>
+    </div>
+  </div>
+</section>
+
+<button id="backToTop" aria-label="Back to top">↑</button>
+
+<footer>
+  © 2026 Nurin Nabeeha binti Azahari
+</footer>
+
+<!-- ===== Evidence Modal with slider ===== -->
+
+<div id="evidenceModal" class="evidence-modal">
+
+  <span class="evidence-close" onclick="closeEvidence()">×</span>
+
+  <button class="evidence-arrow left" onclick="prevImage()">❮</button>
+  <img id="evidenceImage" src="" alt="">
+  <button class="evidence-arrow right" onclick="nextImage()">❯</button>
+
+  <div class="evidence-controls">
+    <button onclick="zoomIn()">+</button>
+    <button onclick="zoomOut()">−</button>
+  </div>
+
+  <div id="evidenceDots" class="evidence-dots"></div>
+
+</div>
+
+<script>
+const navLinks = document.querySelectorAll(".nav a");
+const sections = document.querySelectorAll("section[id]");
+
+let visibleSections = new Map();
+
+const navObserver = new IntersectionObserver((entries) => {
+
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      visibleSections.set(entry.target.id, entry);
+    } else {
+      visibleSections.delete(entry.target.id);
+    }
+  });
+
+  let mostVisible = null;
+
+  visibleSections.forEach(entry => {
+
+    if (
+      !mostVisible ||
+      entry.intersectionRatio > mostVisible.intersectionRatio
+    ) {
+      mostVisible = entry;
+    }
+
+  });
+
+  if (!mostVisible) return;
+
+  const id = mostVisible.target.id;
+
+  navLinks.forEach(link => {
+    link.classList.toggle(
+      "active",
+      link.getAttribute("href") === "#" + id
+    );
+  });
+
+},{
+  threshold: buildThresholdList()
+});
+
+sections.forEach(section => navObserver.observe(section));
+
+function buildThresholdList() {
+  const thresholds = [];
+  for (let i = 0; i <= 1.0; i += 0.05) {
+    thresholds.push(i);
+  }
+  return thresholds;
+}
+
+
+
+/* back to top */
+const backBtn = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+  backBtn.style.display = window.scrollY > 400 ? "block" : "none";
+});
+
+backBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+/* copy email */
+const copyBtn = document.getElementById("copyEmailBtn");
+const emailText = "your_email@example.com";
+
+copyBtn.addEventListener("click", () => {
+  navigator.clipboard.writeText(emailText);
+  copyBtn.textContent = "Copied!";
+  setTimeout(() => copyBtn.textContent = "Copy", 1200);
+});
+
+/* reveal animation */
+const reveals = document.querySelectorAll(".reveal");
+
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+},{ threshold:0.12 });
+
+reveals.forEach(r => revealObserver.observe(r));
+
+/* ===== Evidence slider logic ===== */
+
+let evidenceImages=[];
+let currentIndex=0;
+let currentScale=1;
+
+function openEvidence(images){
+
+  if (!Array.isArray(images)) {
+    images = [images];
+  }
+
+  evidenceImages = images;
+  currentIndex = 0;
+  currentScale = 1;
+
+  document.getElementById("evidenceModal").style.display="flex";
+  showImage();
+  renderDots();
+}
+
+function showImage(){
+  const img=document.getElementById("evidenceImage");
+  img.src = evidenceImages[currentIndex];
+  img.style.transform="scale("+currentScale+")";
+  updateDots();
+}
+
+function closeEvidence(){
+  document.getElementById("evidenceModal").style.display="none";
+}
+
+function nextImage(){
+  if(evidenceImages.length<=1) return;
+  currentIndex=(currentIndex+1)%evidenceImages.length;
+  currentScale=1;
+  showImage();
+}
+
+function prevImage(){
+  if(evidenceImages.length<=1) return;
+  currentIndex=(currentIndex-1+evidenceImages.length)%evidenceImages.length;
+  currentScale=1;
+  showImage();
+}
+
+function zoomIn(){
+  currentScale+=0.1;
+  showImage();
+}
+
+function zoomOut(){
+  currentScale=Math.max(0.4,currentScale-0.1);
+  showImage();
+}
+
+function renderDots(){
+  const dots=document.getElementById("evidenceDots");
+  dots.innerHTML="";
+  evidenceImages.forEach((_,i)=>{
+    const d=document.createElement("span");
+    d.className="dot";
+    d.onclick=()=>{currentIndex=i;showImage();};
+    dots.appendChild(d);
+  });
+  updateDots();
+}
+
+function updateDots(){
+  const dots=document.querySelectorAll(".evidence-dots .dot");
+  dots.forEach((d,i)=>d.classList.toggle("active",i===currentIndex));
+}
+</script>
+
+</body>
+</html>
