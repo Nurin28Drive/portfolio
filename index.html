@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" type="image/png" sizes="32x32" href="images/portfolio.png">
-<title>Nurin Nabeeha Azahari | Portfolio</title>
+<link rel="icon" type="image/png" href="images/portfolio.png" />
+<title>Nurin Nabeeha binti Azahari | Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" href="style.css">
@@ -110,17 +110,25 @@
         </p>
 
         <div class="stack">
-          PHP • MySQL • MVC • Reporting & Filtering • Software Testing & Documentation
+          PHP • HTML • CSS • JavaScript • MySQL • MVC • Reporting & Filtering • Software Testing & Documentation
         </div>
 
         <div class="project-links">
+          <a class="btn primary"
+            href="https://mywastecare.infinityfreeapp.com/" target="_blank" rel="noopener">
+            Live System
+          </a>
+
           <a class="btn outline" href="https://youtu.be/Hbgsy2ft2t8" target="_blank" rel="noopener">
-            Project Video (Promotion)
+            Project Video Promotion (YouTube)
           </a>
 
           <button class="btn outline"
-                  onclick="openEvidence('images/mywastecare-dashboard.png')">
-            View Evidence
+                  onclick="openEvidence(['images/Project1SS/1.MyWasteCare.png','images/Project1SS/2.MyWasteCare.png','images/Project1SS/3.MyWasteCare.png',
+                  'images/Project1SS/4.MyWasteCare.jpeg','images/Project1SS/5.MyWasteCare.jpeg','images/Project1SS/6.MyWasteCare.png','images/Project1SS/7.MyWasteCare.png',
+                  'images/Project1SS/8.MyWasteCare.jpeg','images/Project1SS/9.MyWasteCare.jpg','images/Project1SS/10.MyWasteCare.jpg','images/Project1SS/11.MyWasteCare.jpg',
+                  'images/Project1SS/12.MyWasteCare.jpg','images/Project1SS/13.MyWasteCare.png','images/Project1SS/14.MyWasteCare.jpeg','images/Project1SS/15.MyWasteCare.jpeg'])">
+            View System Screenshots
           </button>
         </div>
       </div>
@@ -128,7 +136,7 @@
       <!-- Project 2 -->
       <div class="project-card">
         <span class="badge">Web System</span>
-        <h3>Royal Seat Cinemas – Staff & Ticketing Management System</h3>
+        <h3>Royal Seat Cinemas – Staff & Admin Ticketing Management System</h3>
 
         <p>
           An internal cinema management system supporting staff attendance, leave application,
@@ -146,7 +154,7 @@
 
           <button class="btn outline"
                   onclick="openEvidence('images/rsc-attendance.png')">
-            View Evidence
+            View System Screenshots
           </button>
         </div>
       </div>
@@ -171,12 +179,13 @@
              href="https://youtu.be/Vj4s8TRl9X0?si=JX4BG_ka_o6D5AmH"
              target="_blank"
              rel="noopener">
-             YouTube Demo
+             Project Demo Presentation (YouTube)
           </a>
 
           <button class="btn outline"
-                  onclick="openEvidence('images/pastaluxe-cart.png')">
-            View Evidence
+                  onclick="openEvidence(['images/Project3SS/1.PastaLuxe&BrewsCafe.jpg','images/Project3SS/2.PastaLuxe&BrewsCafe.jpeg','images/Project3SS/3.PastaLuxe&BrewsCafe.jpeg',
+                  'images/Project3SS/4.PastaLuxe&BrewsCafe.jpeg', 'images/Project3SS/5.PastaLuxe&BrewsCafe.jpeg', 'images/Project3SS/6.PastaLuxe&BrewsCafe.jpeg'])">
+            View System Screenshots
           </button>
         </div>
       </div>
@@ -210,6 +219,14 @@
       </div>
 
       <div class="extra-item">
+        Campus LAN Design using Cisco Packet Tracer
+        <button class="mini-btn"
+                onclick="openEvidence('images/campus-lan.png')">
+          View
+        </button>
+      </div>
+
+      <div class="extra-item">
         Flutter Tour Booking Application (Mobile & Ubiquitous Computing)
         <button class="mini-btn"
                 onclick="openEvidence(['images/img1.png','images/img2.png','images/img3.png'])">
@@ -226,25 +243,9 @@
       </div>
 
       <div class="extra-item">
-        Categorized Bus Ticketing with QR & NFC Integration
-        <button class="mini-btn"
-                onclick="openEvidence('images/bus-ticketing.png')">
-          View
-        </button>
-      </div>
-
-      <div class="extra-item">
         University Management System – Java EE (Reuse & Component Based Development)
         <button class="mini-btn"
                 onclick="openEvidence('images/javaee-system.png')">
-          View
-        </button>
-      </div>
-
-      <div class="extra-item">
-        Campus LAN Design using Cisco Packet Tracer
-        <button class="mini-btn"
-                onclick="openEvidence('images/campus-lan.png')">
           View
         </button>
       </div>
@@ -283,13 +284,24 @@
     <div class="contact-box">
       <p>
         <strong>Email:</strong>
-        <a id="emailLink" href="mailto:your_email@example.com">
-          your_email@example.com
+        <a id="emailLink" href="mailto:nurin.azahari@s.unikl.edu.my">
+          nurin.azahari@s.unikl.edu.my
         </a>
         <button id="copyEmailBtn" class="copy-btn">Copy</button>
       </p>
 
-      <p><strong>GitHub:</strong> (coming soon)</p>
+      <p>
+        <strong>Phone:</strong>
+        <a href="tel:+60199358145">+6019-9358145</a>
+      </p>
+
+      <p>
+        <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/nurin-nabeeha-azahari"
+          target="_blank" rel="noopener">
+          https://www.linkedin.com/in/nurin-nabeeha-azahari
+        </a>
+      </p>
 
       <p>
         I am open to internship opportunities in web and software development.
@@ -377,8 +389,6 @@ function buildThresholdList() {
   return thresholds;
 }
 
-
-
 /* back to top */
 const backBtn = document.getElementById("backToTop");
 
@@ -392,7 +402,7 @@ backBtn.addEventListener("click", () => {
 
 /* copy email */
 const copyBtn = document.getElementById("copyEmailBtn");
-const emailText = "your_email@example.com";
+const emailText = "nurin.azahari@s.unikl.edu.my";
 
 copyBtn.addEventListener("click", () => {
   navigator.clipboard.writeText(emailText);
@@ -504,11 +514,4 @@ document.querySelectorAll(".nav-links a").forEach(link=>{
 
 </body>
 </html>
-
-
-
-
-
-
-
 
