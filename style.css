@@ -487,6 +487,9 @@ footer{
   transition:transform .2s ease;
   border-radius:10px;
   box-shadow:0 10px 40px rgba(0,0,0,.4);
+  touch-action: pan-y;
+  -webkit-user-select: none; /* Safari / iOS */
+  user-select: none;
 }
 
 .evidence-close{
