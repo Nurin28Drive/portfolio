@@ -4,7 +4,7 @@ html{ scroll-behavior:smooth; }
 
 :root{
   --bg-main:#ffffff;
-  --bg-soft:#f6f9f8;
+  --bg-soft:#ecfdfb;
 
   --primary:#2fb7a5;
   --primary-dark:#1c8f81;
@@ -12,7 +12,7 @@ html{ scroll-behavior:smooth; }
 
   --text-main:#1f2933;
   --text-soft:#6b7280;
-  --border:#e5e7eb;
+  --border:#6ad8c8;
 }
 
 /* -------------------- Base -------------------- */
