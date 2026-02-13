@@ -510,6 +510,25 @@ document.querySelectorAll(".nav-links a").forEach(link=>{
   });
 });
 
+const evidenceImg = document.getElementById("evidenceImage");
+
+let startX = 0;
+
+evidenceImg.addEventListener("touchstart", e => {
+  startX = e.touches[0].clientX;
+}, { passive: true });
+
+evidenceImg.addEventListener("touchend", e => {
+  const endX = e.changedTouches[0].clientX;
+  const diff = endX - startX;
+
+  if (Math.abs(diff) < 50) return;
+
+  if (diff < 0) nextImage();
+  else prevImage();
+
+}, { passive: true });
+
 </script>
 
 </body>
