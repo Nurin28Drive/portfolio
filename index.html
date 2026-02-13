@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" href="images/portfolio.png" />
+<link rel="icon" type="image/png" href="images/portfolio.png" />
 <title>Nurin Nabeeha binti Azahari | Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,24 +14,27 @@
 <header>
   <div class="nav">
 
-    <div class="brand">
+    <a href="#home" class="brand">
       <img src="images/portfolio-icon.png" alt="Portfolio Icon">
       <strong>Nurin Nabeeha binti Azahari</strong>
-    </div>
+    </a>
 
-    <div>
+    <button class="hamburger" aria-label="Toggle menu">
+      ☰
+    </button>
+
+    <div class="nav-links">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </div>
-
   </div>
 </header>
 
 <!-- ================= HERO ================= -->
 
-<div class="hero">
+<div class="hero" id="home">
   <div class="container hero-grid">
 
     <div>
@@ -481,9 +484,22 @@ function updateDots(){
   const dots=document.querySelectorAll(".evidence-dots .dot");
   dots.forEach((d,i)=>d.classList.toggle("active",i===currentIndex));
 }
+
+const hamburger = document.querySelector(".hamburger");
+const navLinksBox = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinksBox.classList.toggle("show");
+});
+
+/* close menu after clicking a link (mobile UX) */
+document.querySelectorAll(".nav-links a").forEach(link=>{
+  link.addEventListener("click", ()=>{
+    navLinksBox.classList.remove("show");
+  });
+});
+
 </script>
 
 </body>
 </html>
-
-
