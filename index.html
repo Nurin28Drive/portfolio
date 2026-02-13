@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" type="image/png" href="images/portfolio.png" />
+<link rel="icon" href="images/portfolio.png" />
 <title>Nurin Nabeeha binti Azahari | Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -24,7 +24,7 @@
     </button>
 
     <div class="nav-links">
-      <a href="home">Home</a>
+      <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
@@ -325,7 +325,7 @@
 
 <script>
 const navLinks = document.querySelectorAll(".nav-links a");
-const sections = document.querySelectorAll("section[id]");
+const sections = document.querySelectorAll("section[id], #home");
 
 let visibleSections = new Map();
 
@@ -504,4 +504,3 @@ document.querySelectorAll(".nav-links a").forEach(link=>{
 
 </body>
 </html>
-
