@@ -82,6 +82,53 @@ header{
   font-weight:600;
 }
 
+/* ---------------- Mobile menu ---------------- */
+
+.hamburger{
+  display:none;
+  font-size:26px;
+  background:none;
+  border:none;
+  cursor:pointer;
+  color:var(--text-main);
+}
+
+/* desktop */
+.nav-links{
+  display:flex;
+  align-items:center;
+}
+
+/* mobile */
+@media (max-width: 768px){
+
+  .hamburger{
+    display:block;
+  }
+
+  .nav-links{
+    position:absolute;
+    top:100%;
+    right:0;
+    left:0;
+    background:white;
+    flex-direction:column;
+    gap:12px;
+    padding:16px 0;
+    border-bottom:1px solid var(--border);
+    display:none;
+  }
+
+  .nav-links.show{
+    display:flex;
+  }
+
+  .nav a{
+    margin:0;
+    padding:8px 0;
+  }
+}
+
 /* -------------------- Hero -------------------- */
 
 .hero{
