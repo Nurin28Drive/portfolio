@@ -41,13 +41,24 @@
     <div>
       <h1>Hello, I’m Nurin Nabeeha</h1>
 
-      <h2>Final year Software Engineering student building real web and system-based applications</h2>
+      <h2>
+        <span class="typing">
+          <span id="typingText"></span>
+        </span>
+      </h2>
 
       <p>
-        I focus on developing web-based systems with real business logic such as attendance
-        validation, staff and administrative management, reporting and filtering features.
-        My projects also involve software testing documentation, system analysis and quality
-        practices based on academic and industry-oriented standards.
+        Final year Software Engineering student with hands-on experience designing 
+        structured web-based systems with real operational workflows. I specialize in 
+        backend logic, validation mechanisms, reporting modules, and system design 
+        aligned with software engineering best practices.
+      </p>
+
+      <p>
+        My Final Year Project, <strong>MyWasteCare – Household Waste Management Portal</strong>, 
+        demonstrates my ability to design and implement a complete MVC-based web system 
+        incorporating authentication control, operational record management, reporting 
+        and filtered data generation for administrative monitoring.
       </p>
 
       <div class="hero-actions">
@@ -55,15 +66,6 @@
         <a href="#contact" class="btn outline">Contact Me</a>
       </div>
     </div>
-
-    <div class="about-box">
-      <strong>Currently seeking</strong>
-      <p class="hero-note">
-        Internship position as a web developer or software engineer, where I can contribute to
-        real system development and continue improving my backend and system design skills.
-      </p>
-    </div>
-
   </div>
 </div>
 
@@ -75,16 +77,24 @@
 
     <div class="about-box">
       <p>
-        I am a final year Software Engineering student who enjoys building structured web
-        applications and backend logic for real operational use such as staff attendance,
-        leave management and ticketing systems.
+        I am a final year Software Engineering student with a strong interest in 
+        structured system development and backend application logic. My work focuses on 
+        designing systems that solve real operational problems through clear architecture, 
+        controlled workflows, and secure data handling.
       </p>
 
       <p>
-        Outside my academic work, I enjoy spending time in nature when possible, playing
-        badminton, solving logic games such as Sudoku and Solitaire, and watching movies.
-        I am currently seeking an internship position as a web developer or software
-        engineer.
+        Through my Final Year Project, I developed a full web-based management portal 
+        applying MVC architecture, role-based access control, validation mechanisms, 
+        and reporting features. I am comfortable working with PHP, MySQL, Java, C#, 
+        and system documentation including Software Test Plans (STP) and risk assessments.
+      </p>
+
+      <p>
+        Beyond technical development, I value clean system design, maintainability, 
+        and aligning software solutions with business requirements. I am actively 
+        preparing to transition into a professional software development role 
+        through internship experience.
       </p>
     </div>
   </div>
@@ -651,6 +661,24 @@ modal.addEventListener("touchend", e => {
   else prevImage();
 
 }, { passive:true });
+
+/* Typing */
+
+const fullText =
+  "Software Engineering Student | Web System Developer | Backend-Focused Problem Solver";
+
+let index = 0;
+const typingText = document.getElementById("typingText");
+
+function typeOnce() {
+  if (index < fullText.length) {
+    typingText.textContent += fullText.charAt(index);
+    index++;
+    setTimeout(typeOnce, 35);
+  }
+}
+
+typeOnce();
 
 </script>
 
