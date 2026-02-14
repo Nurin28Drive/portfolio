@@ -654,4 +654,11 @@ button:focus-visible{
     max-width:100%;
   }
 
+  .typing{
+    white-space:normal;      /* allow wrapping */
+    word-break:break-word;
+    overflow-wrap:anywhere;
+    border-right:none;       /* remove cursor if it looks odd on wrap */
+  }
+
 }
