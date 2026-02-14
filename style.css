@@ -303,7 +303,7 @@ section{ padding:70px 0; }
 .project-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  gap:24px;
+  gap:32px;
 }
 
 .project-card{
@@ -393,6 +393,44 @@ section{ padding:70px 0; }
   gap:10px;
 }
 
+/* ================= OTHER PROJECTS ================= */
+
+.other-projects{
+  gap:18px;
+}
+
+.other-projects .project-card{
+  padding:16px 16px 18px;
+  background:#f7fbfb;
+  border:1px dashed #738bd1;
+  box-shadow:none;
+}
+
+.other-projects .project-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 5px 12px rgba(0,0,0,.04);
+}
+
+.other-projects .project-card::before,
+.other-projects .project-card::after{
+  display:none;
+}
+
+.other-projects .project-card h3{
+  font-size:17px;
+}
+
+.other-projects .project-card p{
+  font-size:13.5px;
+  color:#667675;
+}
+
+.other-projects .badge{
+  font-size:10.5px;
+  padding:3px 7px;
+  background:#eef8f6;
+}
+
 /* -------------------- Contact -------------------- */
 
 .contact-box{
@@ -480,23 +518,28 @@ footer{
   z-index:999;
 }
 
-.evidence-arrow{
-  position:absolute; 
-  z-index:5;
+/* CENTER THE CONTENT PROPERLY */
+#evidenceContent{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  height:100%;
 }
 
-.evidence-modal img{
-  max-width:80%;
-  max-height:80%;
-  transform:scale(1);
-  transition:transform .2s ease;
+/* IMAGE STYLE */
+#evidenceContent img{
+  max-width:80vw;
+  max-height:80vh;
   border-radius:10px;
   box-shadow:0 10px 40px rgba(0,0,0,.4);
+  transition:transform .2s ease;
   touch-action: pan-y;
-  -webkit-user-select: none; /* Safari / iOS */
-  user-select: none;
+  -webkit-user-select:none;
+  user-select:none;
 }
 
+/* CLOSE BUTTON */
 .evidence-close{
   position:absolute;
   top:20px;
@@ -506,6 +549,7 @@ footer{
   cursor:pointer;
 }
 
+/* ZOOM CONTROLS */
 .evidence-controls{
   position:absolute;
   bottom:30px;
@@ -521,6 +565,7 @@ footer{
   cursor:pointer;
 }
 
+/* ARROWS */
 .evidence-arrow{
   position:absolute;
   top:50%;
@@ -531,11 +576,13 @@ footer{
   color:#fff;
   cursor:pointer;
   padding:10px;
+  z-index:5;
 }
 
 .evidence-arrow.left{ left:40px; }
 .evidence-arrow.right{ right:40px; }
 
+/* DOTS */
 .evidence-dots{
   position:absolute;
   bottom:30px;
