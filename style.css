@@ -202,6 +202,7 @@ header{
   margin:0 0 18px;
   font-weight:500;
   color:var(--primary-dark);
+  min-height:28px;      /* Prevent layout jump */
 }
 
 .hero p{
@@ -212,6 +213,23 @@ header{
 .hero-actions{ margin-top:28px; }
 
 .hero-note{ margin-top:10px; }
+
+.typing{
+  display:inline-block;
+  font-size:20px;
+  font-weight:600;
+  color:var(--primary-dark);
+  border-right:3px solid var(--accent);
+  white-space:nowrap;
+  overflow:hidden;
+  animation: blink 1s infinite;
+  max-width:100%;       /* Prevent overflow */
+}
+
+@keyframes blink{
+  0%,100%{ border-color:transparent; }
+  50%{ border-color:var(--accent); }
+}
 
 /* -------------------- Buttons -------------------- */
 
