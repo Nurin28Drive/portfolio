@@ -144,16 +144,18 @@
         </p>
 
         <div class="stack">
-          PHP • MySQL • JavaScript • Attendance & Leave Validation • Reporting • Software Quality & SCM
+          PHP • HTML • CSS • JavaScript • MySQL • Attendance & Leave Validation • Reporting • Software Quality & SCM
         </div>
 
         <div class="project-links">
-          <a class="btn outline" href="#" target="_blank" rel="noopener">
-            YouTube Demo
+          <a class="btn primary"
+            href="#" target="_blank" rel="noopener">
+            Live System
           </a>
 
           <button class="btn outline"
-                  onclick="openEvidence('images/rsc-attendance.png')">
+                  onclick="openEvidence(['images/Project2SS/1.RSC.jpg','images/Project2SS/1.RSC.jpg',
+                  'images/Project2SS/1.RSC.jpg'])">
             View System Screenshots
           </button>
         </div>
@@ -200,54 +202,142 @@
   <div class="container">
     <div class="section-title">Other Academic & Technical Projects</div>
 
-    <div class="extra-list">
+    <div class="project-grid other-projects">
 
-      <div class="extra-item">
-        Vulnerability Assessment using Nessus (ISMS – Host Environment)
-        <button class="mini-btn"
-                onclick="openEvidence('images/nessus-scan.png')">
-          View
-        </button>
+      <!-- ISMS -->
+      <div class="project-card">
+        <span class="badge">Information Security</span>
+        <h3>ISMS Audit – ISO/IEC 27001 Risk Assessment</h3>
+        <p>
+          Conducted structured ISMS audit covering asset identification, 
+          threat modeling, vulnerability assessment and risk determination 
+          using likelihood–impact matrix aligned with ISO/IEC 27001.
+        </p>
+        <div class="stack">
+          Risk Assessment • ISO/IEC 27001 • Threat Modeling • Security Controls
+        </div>
+        <div class="project-links">
+          <a class="btn outline"
+             href="documents/ISMS_Audit_Report_Excerpt.pdf"
+             target="_blank"
+             rel="noopener">
+            View Report (PDF)
+          </a>
+        </div>
       </div>
 
-      <div class="extra-item">
-        ISMS Audit Report – Brahim’s Food Services (Operations Department)
-        <button class="mini-btn"
-                onclick="openEvidence('images/isms-report.png')">
-          View
-        </button>
+      <!-- LAN Design -->
+      <div class="project-card">
+        <span class="badge">Networking</span>
+        <h3>Campus LAN Design – Cisco Packet Tracer</h3>
+        <p>
+          Designed and simulated a three-floor hierarchical campus LAN architecture 
+          using Cisco Packet Tracer. Implemented VLAN segmentation, VLSM subnetting, 
+          Inter-VLAN routing, and extended ACL for access control between departments.
+        </p>
+        <div class="stack">
+          VLAN (10/20/30/40/50) • VLSM • Inter-VLAN Routing • Extended ACL • 
+          Wireless VLAN • Hierarchical Topology
+        </div>
+        <div class="project-links">
+          <button class="btn outline"
+            onclick="openEvidence([
+              'images/lan-logical.png',
+              'images/lan-physical.png'
+            ])">
+            View Topology Designs
+          </button>
+          <a class="btn outline"
+            href="documents/LAN_Design_Excerpt.pdf"
+            target="_blank"
+            rel="noopener">
+            View Design Summary (PDF)
+          </a>
+        </div>
       </div>
 
-      <div class="extra-item">
-        Campus LAN Design using Cisco Packet Tracer
-        <button class="mini-btn"
-                onclick="openEvidence('images/campus-lan.png')">
-          View
-        </button>
+      <!-- MRT App -->
+      <div class="project-card">
+        <span class="badge">Mobile Application</span>
+        <h3>MRT Putrajaya Line Fare Calculator</h3>
+        <p>
+          Developed a Flutter-based mobile application implementing 
+          route-based fare computation logic and station input validation 
+          for MRT Putrajaya transit routes.
+        </p>
+        <div class="stack">
+          Flutter • Dart • Fare Computation Logic • Mobile UI Design
+        </div>
+        <div class="project-links">
+          <a class="btn outline"
+            href="https://youtu.be/0bUSquqxRwI"
+            target="_blank"
+            rel="noopener">
+            View Demo (YouTube)
+          </a>
+        </div>
       </div>
 
-      <div class="extra-item">
-        Flutter Tour Booking Application (Mobile & Ubiquitous Computing)
-        <button class="mini-btn"
-                onclick="openEvidence(['images/img1.png','images/img2.png','images/img3.png'])">
-          View
-        </button>
+      <!-- Flutter App -->
+      <div class="project-card">
+        <span class="badge">Mobile & Ubiquitous</span>
+        <h3>Flutter Tour Booking Application</h3>
+        <p>
+          Built cross-platform mobile booking application featuring 
+          user authentication, package listing, and booking interface 
+          using Flutter framework.
+        </p>
+        <div class="stack">
+          Flutter • Dart • UI Design • Mobile Architecture
+        </div>
+        <div class="project-links">
+          <button class="btn outline"
+            onclick="openEvidence(['images/img1.png','images/img2.png','images/img3.png'])">
+            View App Screens
+          </button>
+        </div>
       </div>
 
-      <div class="extra-item">
-        MRT Putrajaya Line Fare Calculator (Mobile App – Individual)
-        <button class="mini-btn"
-                onclick="openEvidence('images/mrt-app.png')">
-          View
-        </button>
+      <!-- Java EE -->
+      <div class="project-card">
+        <span class="badge">Enterprise System</span>
+        <h3>University Management System – Java EE</h3>
+        <p>
+          Developed enterprise web application using Java EE 
+          implementing MVC pattern, session handling, and 
+          modular component reuse.
+        </p>
+        <div class="stack">
+          Java EE • Servlets • JSP • MVC • Component Reuse
+        </div>
+        <div class="project-links">
+          <button class="btn outline"
+            onclick="openEvidence('images/javaee-system.png')">
+            View Screenshots
+          </button>
+        </div>
       </div>
 
-      <div class="extra-item">
-        University Management System – Java EE (Reuse & Component Based Development)
-        <button class="mini-btn"
-                onclick="openEvidence('images/javaee-system.png')">
-          View
-        </button>
+      <!-- BCP -->
+      <div class="project-card">
+        <span class="badge">Business Continuity</span>
+        <h3>Business Continuity Planning (BCP) – MARA</h3>
+        <p>
+          Developed structured Business Continuity Plan including 
+          risk impact analysis, recovery strategy, and incident 
+          response framework for operational resilience.
+        </p>
+        <div class="stack">
+          Risk Impact Analysis • Recovery Strategy • BCP Framework
+        </div>
+        <div class="project-links">
+          <a class="btn outline"
+             href="documents/BCP_MARA_Excerpt.pdf"
+             target="_blank"
+             rel="noopener">
+            View Report (PDF)
+          </a>
+        </div>
       </div>
 
     </div>
@@ -323,7 +413,7 @@
   <span class="evidence-close" onclick="closeEvidence()">×</span>
 
   <button class="evidence-arrow left" onclick="prevImage()">❮</button>
-  <img id="evidenceImage" src="" alt="">
+  <div id="evidenceContent"></div>
   <button class="evidence-arrow right" onclick="nextImage()">❯</button>
 
   <div class="evidence-controls">
@@ -336,6 +426,9 @@
 </div>
 
 <script>
+
+/* ================= NAV ACTIVE HIGHLIGHT ================= */
+
 const navLinks = document.querySelectorAll(".nav-links a");
 const sections = document.querySelectorAll("section[id], #home");
 
@@ -354,14 +447,10 @@ const navObserver = new IntersectionObserver((entries) => {
   let mostVisible = null;
 
   visibleSections.forEach(entry => {
-
-    if (
-      !mostVisible ||
-      entry.intersectionRatio > mostVisible.intersectionRatio
-    ) {
+    if (!mostVisible ||
+        entry.intersectionRatio > mostVisible.intersectionRatio) {
       mostVisible = entry;
     }
-
   });
 
   if (!mostVisible) return;
@@ -389,7 +478,9 @@ function buildThresholdList() {
   return thresholds;
 }
 
-/* back to top */
+
+/* ================= BACK TO TOP ================= */
+
 const backBtn = document.getElementById("backToTop");
 
 window.addEventListener("scroll", () => {
@@ -400,7 +491,9 @@ backBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-/* copy email */
+
+/* ================= COPY EMAIL ================= */
+
 const copyBtn = document.getElementById("copyEmailBtn");
 const emailText = "nurin.azahari@s.unikl.edu.my";
 
@@ -410,7 +503,9 @@ copyBtn.addEventListener("click", () => {
   setTimeout(() => copyBtn.textContent = "Copy", 1200);
 });
 
-/* reveal animation */
+
+/* ================= REVEAL ANIMATION ================= */
+
 const reveals = document.querySelectorAll(".reveal");
 
 const revealObserver = new IntersectionObserver(entries => {
@@ -423,31 +518,70 @@ const revealObserver = new IntersectionObserver(entries => {
 
 reveals.forEach(r => revealObserver.observe(r));
 
-/* ===== Evidence slider logic ===== */
 
-let evidenceImages=[];
-let currentIndex=0;
-let currentScale=1;
+/* ================= MOBILE NAV ================= */
 
-function openEvidence(images){
+const hamburger = document.querySelector(".hamburger");
+const navLinksBox = document.querySelector(".nav-links");
 
-  if (!Array.isArray(images)) {
-    images = [images];
+hamburger.addEventListener("click", () => {
+  navLinksBox.classList.toggle("show");
+});
+
+document.querySelectorAll(".nav-links a").forEach(link=>{
+  link.addEventListener("click", ()=>{
+    navLinksBox.classList.remove("show");
+  });
+});
+
+
+/* ================= EVIDENCE MODAL ================= */
+
+let evidenceFiles = [];
+let currentIndex = 0;
+let currentScale = 1;
+
+function openEvidence(files){
+
+  if (!Array.isArray(files)) {
+    files = [files];
   }
 
-  evidenceImages = images;
+  evidenceFiles = files;
   currentIndex = 0;
   currentScale = 1;
 
   document.getElementById("evidenceModal").style.display="flex";
-  showImage();
+  showEvidence();
   renderDots();
 }
 
-function showImage(){
-  const img=document.getElementById("evidenceImage");
-  img.src = evidenceImages[currentIndex];
-  img.style.transform="scale("+currentScale+")";
+function showEvidence(){
+
+  const container = document.getElementById("evidenceContent");
+  container.innerHTML = "";
+
+  const file = evidenceFiles[currentIndex];
+
+  if (file.endsWith(".pdf")) {
+
+    const iframe = document.createElement("iframe");
+    iframe.src = file;
+    iframe.style.width = "80vw";
+    iframe.style.height = "80vh";
+    iframe.style.border = "none";
+
+    container.appendChild(iframe);
+
+  } else {
+
+    const img = document.createElement("img");
+    img.src = file;
+    img.style.transform = "scale("+currentScale+")";
+
+    container.appendChild(img);
+  }
+
   updateDots();
 }
 
@@ -456,36 +590,36 @@ function closeEvidence(){
 }
 
 function nextImage(){
-  if(evidenceImages.length<=1) return;
-  currentIndex=(currentIndex+1)%evidenceImages.length;
+  if(evidenceFiles.length<=1) return;
+  currentIndex=(currentIndex+1)%evidenceFiles.length;
   currentScale=1;
-  showImage();
+  showEvidence();
 }
 
 function prevImage(){
-  if(evidenceImages.length<=1) return;
-  currentIndex=(currentIndex-1+evidenceImages.length)%evidenceImages.length;
+  if(evidenceFiles.length<=1) return;
+  currentIndex=(currentIndex-1+evidenceFiles.length)%evidenceFiles.length;
   currentScale=1;
-  showImage();
+  showEvidence();
 }
 
 function zoomIn(){
   currentScale+=0.1;
-  showImage();
+  showEvidence();
 }
 
 function zoomOut(){
   currentScale=Math.max(0.4,currentScale-0.1);
-  showImage();
+  showEvidence();
 }
 
 function renderDots(){
   const dots=document.getElementById("evidenceDots");
   dots.innerHTML="";
-  evidenceImages.forEach((_,i)=>{
+  evidenceFiles.forEach((_,i)=>{
     const d=document.createElement("span");
     d.className="dot";
-    d.onclick=()=>{currentIndex=i;showImage();};
+    d.onclick=()=>{currentIndex=i;showEvidence();};
     dots.appendChild(d);
   });
   updateDots();
@@ -496,29 +630,18 @@ function updateDots(){
   dots.forEach((d,i)=>d.classList.toggle("active",i===currentIndex));
 }
 
-const hamburger = document.querySelector(".hamburger");
-const navLinksBox = document.querySelector(".nav-links");
 
-hamburger.addEventListener("click", () => {
-  navLinksBox.classList.toggle("show");
-});
-
-/* close menu after clicking a link (mobile UX) */
-document.querySelectorAll(".nav-links a").forEach(link=>{
-  link.addEventListener("click", ()=>{
-    navLinksBox.classList.remove("show");
-  });
-});
-
-const evidenceImg = document.getElementById("evidenceImage");
+/* ================= MOBILE SWIPE SUPPORT ================= */
 
 let startX = 0;
 
-evidenceImg.addEventListener("touchstart", e => {
-  startX = e.touches[0].clientX;
-}, { passive: true });
+const modal = document.getElementById("evidenceModal");
 
-evidenceImg.addEventListener("touchend", e => {
+modal.addEventListener("touchstart", e => {
+  startX = e.touches[0].clientX;
+}, { passive:true });
+
+modal.addEventListener("touchend", e => {
   const endX = e.changedTouches[0].clientX;
   const diff = endX - startX;
 
@@ -527,7 +650,7 @@ evidenceImg.addEventListener("touchend", e => {
   if (diff < 0) nextImage();
   else prevImage();
 
-}, { passive: true });
+}, { passive:true });
 
 </script>
 
