@@ -203,6 +203,8 @@ header{
   font-weight:500;
   color:var(--primary-dark);
   min-height:28px;      /* Prevent layout jump */
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .hero p{
@@ -215,12 +217,12 @@ header{
 .hero-note{ margin-top:10px; }
 
 .typing{
-  display:inline-block;
+  display:block;
   font-size:20px;
   font-weight:600;
   color:var(--primary-dark);
   border-right:3px solid var(--accent);
-  white-space:nowrap;
+  /*white-space:nowrap;*/
   overflow:hidden;
   animation: blink 1s infinite;
   max-width:100%;       /* Prevent overflow */
@@ -632,4 +634,24 @@ button:focus-visible{
 
 @media(max-width:900px){
   .hero-grid{ grid-template-columns:1fr; }
+}
+
+@media (max-width: 768px){
+
+  .hero{
+    padding:70px 0 50px;
+  }
+
+  .hero h1{
+    font-size:30px;
+  }
+
+  .hero h2{
+    font-size:16px;
+  }
+
+  .hero p{
+    max-width:100%;
+  }
+
 }
