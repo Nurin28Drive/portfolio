@@ -226,11 +226,24 @@ header{
   overflow:hidden;
   animation: blink 1s infinite;
   max-width:100%;       /* Prevent overflow */
+  min-height:28px;
+  word-break:break-word;
+  overflow-wrap:anywhere;
+}
+
+.cursor{
+  display:inline-block;
+  width:3px;
+  height:1em;
+  background:var(--accent);
+  margin-left:4px;
+  animation: blink 1s infinite;
+  vertical-align:bottom;
 }
 
 @keyframes blink{
-  0%,100%{ border-color:transparent; }
-  50%{ border-color:var(--accent); }
+  0%,100%{ opacity:0; }
+  50%{ opacity:1; }
 }
 
 /* -------------------- Buttons -------------------- */
