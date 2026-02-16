@@ -149,6 +149,7 @@ header{
   top:-120px;
   width:320px;
   height:320px;
+  pointer-events:none;
   background:radial-gradient(circle at center,
     rgba(47,183,165,.30),
     rgba(47,183,165,0)
@@ -162,6 +163,7 @@ header{
   bottom:-120px;
   width:340px;
   height:340px;
+  pointer-events:none;
   background:radial-gradient(circle at center,
     rgba(255,183,3,.30),
     rgba(255,183,3,0)
@@ -221,30 +223,31 @@ header{
   font-size:20px;
   font-weight:600;
   color:var(--primary-dark);
-  border-right:3px solid var(--accent);
-  /*white-space:nowrap;*/
-  overflow:hidden;
-  animation: blink 1s infinite;
-  max-width:100%;       /* Prevent overflow */
   min-height:28px;
+  line-height:1.4;
   word-break:break-word;
   overflow-wrap:anywhere;
 }
 
 .cursor{
   display:inline-block;
-  width:3px;
+  width:2px;
   height:1em;
   background:var(--accent);
-  margin-left:4px;
-  animation: blink 1s infinite;
-  vertical-align:bottom;
+  margin-left:3px;
+  animation: cursorBlink 1s infinite;
+  vertical-align:text-bottom;
 }
 
-@keyframes blink{
+@keyframes cursorBlink{
+  0%,100%{ opacity:0; }
+  50%{ opacity:1; }
+}
+
+/*@keyframes blink{
   0%,100%{ border-color:transparent; }
   50%{ border-color:var(--accent); }
-}
+}*/
 
 /* -------------------- Buttons -------------------- */
 
@@ -672,6 +675,11 @@ button:focus-visible{
     word-break:break-word;
     overflow-wrap:anywhere;
     border-right:none;       /* remove cursor if it looks odd on wrap */
+  }
+
+  .hero-actions{
+    position:relative;
+    z-index:2;
   }
 
 }
