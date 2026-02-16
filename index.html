@@ -9,6 +9,8 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
+<div id="scrollBar"></div>
+
 <body>
 
 <header>
@@ -118,7 +120,8 @@
         </p>
 
         <div class="stack">
-          PHP • HTML • CSS • JavaScript • MySQL • MVC • Reporting & Filtering • Software Testing & Documentation
+          PHP • JavaScript • MySQL • MVC Architecture • Google Maps API • 
+          Reporting & Data Filtering • Authentication & RBAC • Software Testing & Documentation
         </div>
 
         <div class="project-links">
@@ -157,7 +160,7 @@
 
         <div class="project-links">
           <a class="btn primary"
-            href="#" target="_blank" rel="noopener">
+            href="https://royal-seat-cinemas-rsc.infinityfreeapp.com/" target="_blank" rel="noopener">
             Live System
           </a>
 
@@ -678,7 +681,24 @@ function typeOnce() {
 
 typeOnce();
 
+/* Scroll progress bar */
+window.addEventListener("scroll",()=>{
+  const height = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = (window.scrollY / height) * 100;
+  document.getElementById("scrollBar").style.width = progress + "%";
+});
+
+const glow = document.getElementById("cursorGlow");
+
+document.addEventListener("mousemove", e=>{
+  glow.style.left = e.clientX + "px";
+  glow.style.top = e.clientY + "px";
+});
+
 </script>
+
+<div id="cursorGlow"></div>
 
 </body>
 </html>
+
