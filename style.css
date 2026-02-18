@@ -544,6 +544,35 @@ section::after{
   gap:10px;
 }
 
+.demo-box{
+  margin-top:18px;
+  padding:16px;
+  border-radius:12px;
+  background:rgba(255,255,255,0.6);
+  border:1px dashed #9fded4;
+  width:100%;
+  box-sizing:border-box;
+}
+
+.demo-box strong{
+  display:block;
+  margin-bottom:6px;
+  color:#1c8f81;
+}
+
+.demo-credentials{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(180px,1fr));
+  gap:14px;
+  margin-top:8px;
+}
+
+.demo-credentials p{
+  margin:0;
+  line-height:1.5;
+  color:#334155;
+}
+
 /* -------------------- Other projects -------------------- */
 
 .extra-list{
